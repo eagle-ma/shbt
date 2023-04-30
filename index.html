@@ -60,6 +60,24 @@ for free under the <a href="https://creativecommons.org/licenses/by/3.0/">Creati
 		<link rel="stylesheet" href="css/main.css" />
 
 
+<script type="text/javascript"> 
+function disableselect(e){  
+return false  
+}  
+
+function reEnable(){  
+return true  
+}  
+
+//if IE4+  
+document.onselectstart=new Function ("return false")  
+document.oncontextmenu=new Function ("return false")  
+//if NS6  
+if (window.sidebar){  
+document.onmousedown=disableselect  
+document.onclick=reEnable  
+}
+</script>
 
 	</head>
 	<body class="is-preload">
@@ -399,7 +417,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 				<!-- Footer -->
 					<footer id="footer">
-						<p class="copyright"><b> Shoqata Bjeshkatare TETOVA © </b> All Rights Reserved: <a href="https://www.linkedin.com/company/websitecompany/">WSC</a>.</p>
+						<p class="copyright"><b> Shoqata Bjeshkatare TETOVA <a href="https://shbt.mk/">©</a> </b> All Rights Reserved: <a href="https://www.linkedin.com/company/websitecompany/">WSC</a>.</p>
 					</footer>
 
 			</div>
